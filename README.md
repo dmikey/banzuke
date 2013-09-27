@@ -1,7 +1,7 @@
 banzuke
 =======
 
-A Standalone Micro JavaScript Que Worker.
+A Standalone Micro JavaScript Broadcasting Messaging Que, to help decouple data driven JavaScript events.
 
 bind an emitter function to banzuke:
 ```javascript

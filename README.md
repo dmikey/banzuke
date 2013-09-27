@@ -3,6 +3,9 @@ banzuke
 
 A Standalone Micro JavaScript Broadcasting Messaging Que, to help decouple data driven JavaScript events.
 
+Combine with yobidashi Pub Sub, or any one you choose (you may need to extend):
+https://github.com/toxigenicpoem/yobidashi
+
 bind an emitter function to banzuke:
 ```javascript
 banzuke.emitter(yobidashi.pub);

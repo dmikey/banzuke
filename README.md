@@ -13,7 +13,7 @@ subscribe banzuke to prefered work event:
 yobidashi.sub('/workQue', banzuke.pullSub);
 ```
 
-create a simple worker function that listens for messages, and then emits to the work que:
+create a simple worker function that listens for messages, and then emits to the work que, or use a _que manager_:
 ```javascript
 (function(){
     var id;

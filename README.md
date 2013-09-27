@@ -28,6 +28,17 @@ create a simple worker function that listens for messages, and then emits to the
 }());
 ```
 
+using a messaging library, like yobidashi to create subbed functions:
+```javascript
+//using yobidashi setup some subs
+var qued_cb = yobidashi.bind(function(){
+    //get the data bound to this function
+    var data = new this;
+    //i do work here
+}, banzuke.message);                         
+yobidashi.sub('/responsive', qued_cb);
+```
+
 push data to the messaging que where and when you need:
 ```javascript
 banzuke.push({foo:'bar'}, '/responsive');
